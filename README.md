@@ -17,3 +17,7 @@ Computational fluid dynamics in [scikit-fem](https://github.com/kinnala/scikit-f
 * https://github.com/gdmcbain/fenics-tuto-in-skfem
   * [07_navier_stokes_channel](https://github.com/gdmcbain/fenics-tuto-in-skfem/tree/master/07_navier_stokes_channel)
   * [08_navier_stokes_cylinder](https://github.com/gdmcbain/fenics-tuto-in-skfem/tree/main/08_navier_stokes_cylinder)
+* publications
+  *  Aquino, A. F. V. de A., Mallinson, S., McBain, G. D., Horrocks, G., Silva, C. de & Barber, T. (2020). Two-dimensional numerical simulation of inkjet print-zone flows. In H. Chanson & R. Brown (eds.), *Proceedings of the 22nd Australasian Fluid Mechanics Conference,* December: Australasian Fluid Mechanics Society. [doi: 10.14264/c646e40](https://doi.org/10.14264%2fc646e40)
+  *  McBain, G. D., Mallinson, S. G., Brown, B. R. & Gustafsson, T. (2019). Three Ways to Compute Multiport Inertance. *The ANZIAM Journal,* **60**:C140–C155. [doi: 10.21914/anziamj.v60i0.14058](https://doi.org/10.21914/anziamj.v60i0.14058)
+
