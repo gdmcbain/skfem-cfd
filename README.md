@@ -14,3 +14,6 @@ Computational fluid dynamics in [scikit-fem](https://github.com/kinnala/scikit-f
   * [ex29: Linear hydrodynamic stability](https://scikit-fem.readthedocs.io/en/latest/listofexamples.html#example-29-linear-hydrodynamic-stability)
   * [ex30: Krylov–Uzawa method for the Stokes equation](https://scikit-fem.readthedocs.io/en/latest/listofexamples.html#example-30-krylov-uzawa-method-for-the-stokes-equation)
   * [ex32: Block-diagonally preconditioned Stokes solver](https://scikit-fem.readthedocs.io/en/latest/listofexamples.html#example-32-block-diagonally-preconditioned-stokes-solver)
+* https://github.com/gdmcbain/fenics-tuto-in-skfem
+  * [07_navier_stokes_channel](https://github.com/gdmcbain/fenics-tuto-in-skfem/tree/master/07_navier_stokes_channel)
+  * [08_navier_stokes_cylinder](https://github.com/gdmcbain/fenics-tuto-in-skfem/tree/main/08_navier_stokes_cylinder)
