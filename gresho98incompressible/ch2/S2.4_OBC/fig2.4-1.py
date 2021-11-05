@@ -50,14 +50,13 @@ def exact(t: float) -> float:
 
     
 fig, ax = subplots()
-ax.set_title("Fig. 2.4-1 Exact and approximate solutions at x = 0.")
 ax.plot(t, exact(t), marker="None", linestyle="dashed", label="exact")
 t0 = 0.004
 ax.text(t0, exact(t0), "$T(0,t)=\sqrt{4t/\pi}$", horizontalalignment="right")
 
 ax.plot(*np.array(trajectory).T, label="skfem", color="k")
 t1 = 0.002
-ax.text(t1, exact(t1) - 5e-3, "$T_1(t)$ for $N = 21$ and $x_i = \{i/N\}^{1/2}$")
+ax.text(t1, exact(t1) - 5e-3, "$T_1(t)$ for $N = 20$ and $x_i = (i/N)^{1/2}$")
 ax.set_xlim(0, 0.012)
 ax.set_ylim(0, 0.12)
 ax.set_aspect(0.1)
