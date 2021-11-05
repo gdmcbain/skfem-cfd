@@ -2,6 +2,8 @@
 
 Computational fluid dynamics in [scikit-fem](https://github.com/kinnala/scikit-fem).
 
+To begin with, the idea is just to reproduce various examples from textbooks.
+
 ## Prior work
 
 * scikit-fem examples
