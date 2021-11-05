@@ -45,13 +45,21 @@ def evolve(time: float, u: np.ndarray) -> Iterator[Tuple[float, np.ndarray]]:
 
 trajectory = [(time, temperature[0]) for time, temperature in evolve(0, basis.zeros())]
 
+def exact(t: float) -> float:
+    return np.sqrt(4 * t / np.pi)
+
+    
 fig, ax = subplots()
 ax.set_title("Fig. 2.4-1 Exact and approximate solutions at x = 0.")
-ax.plot(t, np.sqrt(4 * t / np.pi), marker="None", linestyle="dashed", label="exact")
-ax.plot(*np.array(trajectory).T, label="skfem")
+ax.plot(t, exact(t), marker="None", linestyle="dashed", label="exact")
+t0 = 0.004
+ax.text(t0, exact(t0), "$T(0,t)=\sqrt{4t/\pi}$", horizontalalignment="right")
+
+ax.plot(*np.array(trajectory).T, label="skfem", color="k")
+t1 = 0.002
+ax.text(t1, exact(t1) - 5e-3, "$T_1(t)$ for $N = 21$ and $x_i = \{i/N\}^{1/2}$")
 ax.set_xlim(0, 0.012)
 ax.set_ylim(0, 0.12)
 ax.set_aspect(0.1)
-ax.set_xlabel("time")
-ax.set_ylabel("temperature")
+ax.set_xlabel("t")
 fig.savefig(Path(__file__).with_suffix(".png"))
